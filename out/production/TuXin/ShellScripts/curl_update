@@ -1,0 +1,24 @@
+#!/bin/bash
+export value1=`echo -n "J:\唐飞-客户案件汇总.xls、J:\马骏-案件汇总.xls" | xxd -ps | tr -d '\n' | sed -r 's/(..)/%\1/g'`
+export value2=`echo -n "2021-12" | xxd -ps | tr -d '\n' | sed -r 's/(..)/%\1/g'`
+
+curl -G --data-urlencode "execl_dir=${value1}" --data-urlencode "sheet_name=${value2}"  "localhost:8080/AuToUndelivered_manuscriptServlet"
+#实时更新当月未完成的数据;
+
+
+
+export value1=`echo -n "J:\唐飞-客户案件汇总.xls、J:\马骏-案件汇总.xls" | xxd -ps | tr -d '\n' | sed -r 's/(..)/%\1/g'`
+export value2=`echo -n "2021-12" | xxd -ps | tr -d '\n' | sed -r 's/(..)/%\1/g'`
+curl -G --data-urlencode "execl_dir=${value1}" --data-urlencode "sheet_name=${value2}"  "localhost:8080/AuToUndelivered_manuscriptServlet"
+#实时更新股东表
+
+
+
+export value1=`echo -n "J:\唐飞-客户案件汇总.xls、J:\马骏-案件汇总.xls" | xxd -ps | tr -d '\n' | sed -r 's/(..)/%\1/g'`
+export value2=`echo -n "2021-12" | xxd -ps | tr -d '\n' | sed -r 's/(..)/%\1/g'`
+curl -G --data-urlencode "execl_dir=${value1}" --data-urlencode "sheet_name=${value2}"  "localhost:8080/AuToUndelivered_manuscriptServlet"
+#实时更新流程代报表
+
+
+
+

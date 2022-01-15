@@ -1,0 +1,5 @@
+dbusername:mysql
+dbpassword:123456
+dbname:TuXin
+addr:127.0.0.1
+port:3306

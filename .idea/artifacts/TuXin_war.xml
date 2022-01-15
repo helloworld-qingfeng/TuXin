@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="TuXin:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/TuXin_war</output-path>
+    <root id="archive" name="TuXin_war.war">
+      <element id="artifact" artifact-name="TuXin:war exploded" />
+      <element id="dir-copy" path="$PROJECT_DIR$/web" />
+    </root>
+  </artifact>
+</component>
